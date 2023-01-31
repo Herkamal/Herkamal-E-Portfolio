@@ -366,12 +366,13 @@ nav{
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 .modal__overlay--loading{
   background-color: #242424;
   font-size: 80px;
-  z-index: -1;
+ 
 }
 
 .modal__overlay--success{
@@ -379,6 +380,10 @@ nav{
   font-size: 40px;
   font-weight: 700;
   text-align: center;
+}
+
+.modal__overlay--visible {
+  z-index: 1;
 }
 
 .fa-spinner{
