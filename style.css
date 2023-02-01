@@ -117,7 +117,7 @@ nav,
 .header{
   opacity: 1;
   visibility: visible;
-  transition: all 600ms 600ms;
+  transition: all 600ms 400ms ease;
 }
 
 .modal--open nav,
@@ -125,7 +125,7 @@ nav,
 .modal--open .header{
   opacity: 0;
   visibility: hidden;
-  transition: all 400ms 10ms;
+  transition: all 400ms 10ms ease;
 }
 
 .link__hover-effect--white:after{
@@ -138,6 +138,37 @@ nav,
 .link__hover-effect:hover:after{
   left: 0;
   width: 100%;
+}
+
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-adjust,
+.dark-theme .header__para{
+  color: white;
+}
+
+.dark-theme section{
+  background-color: #242424;
+}
+
+.dark-theme #personal-logo{
+  filter: none;
+}
+
+.dark-theme .scroll__icon{
+  border-color: white;
+}
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover-effect--black:after{
+  background-color: white;
+}
+
+
+.dark-theme .mail__btn{
+  background-color: white;
+  color: #242424;
 }
 
 /* landing page */
