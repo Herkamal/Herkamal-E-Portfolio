@@ -689,6 +689,10 @@ footer {
   .modal__half {
     width: 100%;
   }
+  .shape{
+    visibility: hidden;
+  }
+  
 }
 
 /* Small phones */
