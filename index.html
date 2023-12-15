@@ -11,14 +11,15 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js" defer></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("uChH4fEz-EULeoLue");
-   })();
-</script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("uChH4fEz-EULeoLue");
+      })();
+    </script>
   </head>
   <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
@@ -66,7 +67,8 @@
             strong passion for building web applications with great user
             experiences.
             <br />
-            Here's a bit more <b class="orange click" onclick="toggleModal()"> about me </b>.
+            Here's a bit more
+            <b class="orange click" onclick="toggleModal()"> about me </b>.
           </p>
           <div class="social__list">
             <a href="" class="social__link click">
@@ -139,33 +141,72 @@
               />
               <span class="language__name">React</span>
             </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://imgs.search.brave.com/DhtoQUAxONiOzKOccFNlt-tWxb4mWXu20I92cZP20iU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LXJlZHV4LTI4MzAy/NC5wbmc_Zj13ZWJw/Jnc9MjU2"
+                alt=""
+              />
+              <span class="language__name">Redux</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://imgs.search.brave.com/cwyXKiQN7vomeX_ebgpydRf9gybW7KqK9G6F2bDHBl8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9uZXh0anMt/aWNvbi0yNTZ4MjU2/LXhnb3cybDhhLnBu/Zw"
+                alt=""
+              />
+              <span class="language__name">Next.js</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://imgs.search.brave.com/Sz2IGNlQSMdO_MME3mU3cWd1cPVqsfhS6SscBEUGBVc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG40/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvZ29vZ2xlLWkt/by0yMDE2LzUxMi9n/b29nbGVfZmlyZWJh/c2UtMi0xMjgucG5n"
+                alt=""
+              />
+              <span class="language__name">Firebase</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://imgs.search.brave.com/mt3_ltFUor3sJTiWHdmFbORv1QE3PUtM9gsygWvKgFQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL04vbm9kZWpz/LWxvZ28tRkJFMTIy/RTM3Ny1zZWVrbG9n/by5jb20ucG5n"
+                alt=""
+              />
+              <span class="language__name">Node.js</span>
+            </figure>
           </div>
         </div>
         <div class="modal__half modal__contact">
-          <i class="fas fa-times modal__exit click"onclick="toggleModal()"></i>
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
           <h3 class="modal__title modal__sub-title--contact">
             I'm currently open to new opportunities.
           </h3>
-          <form id="contact__form" onsubmit="contact(event)" >
+          <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">Name</label>
-              <input class="input" name="user_name" type="text" required="">
+              <input class="input" name="user_name" type="text" required="" />
             </div>
             <div class="form__item">
               <label class="form__item--label">Email</label>
-              <input class="input" name="user_email" type="email" required="">
+              <input class="input" name="user_email" type="email" required="" />
             </div>
             <div class="form__item">
               <label class="form__item--label">Message</label>
-              <textarea class="input" name="message" type="text" required=""></textarea>
+              <textarea
+                class="input"
+                name="message"
+                type="text"
+                required=""
+              ></textarea>
             </div>
-            <button id="contact__submit" class="form__submit">Send it my way</button>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
           </form>
           <div class="modal__overlay modal__overlay--loading">
             <i class="fas fa-spinner"></i>
           </div>
-          <div class="modal__overlay modal__overlay--success" >
+          <div class="modal__overlay modal__overlay--success">
             Thanks for the message! Looking forward to speaking to you soon.
           </div>
         </div>
@@ -189,27 +230,31 @@
           <ul class="project__list">
             <li class="project">
               <div class="project__wrapper">
-                <img
-                  src="./assets/googleimg.png"
-                  alt=""
-                  class="project__img"
-                />
+                <img src="./assets/googleimg.png" alt="" class="project__img" />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
-                  <h3 class="project__description--title">
-                    Google Clone
-                  </h3>
+                  <h3 class="project__description--title">Google Clone</h3>
                   <h4 class="project__description--sub-title">
                     Next.JS, JavaScript, HTML, and Tailwind CSS
                   </h4>
                   <p class="project__description--para">
-                    A fully functioning google clone allowing the user to search for any desired infomation on the internet by using the google api used. 
+                    A fully functioning google clone allowing the user to search
+                    for any desired infomation on the internet by using the
+                    google api used.
                   </p>
                   <div class="project__description--links">
-                    <a target="_blank" href="https://github.com/Herkamal/google-clone" class="project__description--link">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Herkamal/google-clone"
+                      class="project__description--link"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
-                    <a target="_blank" href="https://google-clone-jet-six.vercel.app/" class="project__description--link">
+                    <a
+                      target="_blank"
+                      href="https://google-clone-jet-six.vercel.app/"
+                      class="project__description--link"
+                    >
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -219,26 +264,70 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/Libaryimg.png"
+                  src="./assets/twitterimg.png"
                   alt=""
                   class="project__img"
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
+                  <h3 class="project__description--title">Twitter Clone</h3>
+                  <h4 class="project__description--sub-title">
+                    Next.JS, JavaScript, HTML, and Tailwind CSS
+                  </h4>
+                  <p class="project__description--para">
+                    Developed a social media app with a user authentication
+                    system enabling user creation, authentication, and
+                    login/logout functionality. Integrated commenting system
+                    allowing users to engage with other users' content.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Herkamal/twitter-clone"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://twitter-clone-a5ynkrjxr-herkamal.vercel.app/"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/Libaryimg.png" alt="" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
                   <h3 class="project__description--title">
-                    Library E-Commerce 
+                    Library E-Commerce
                   </h3>
                   <h4 class="project__description--sub-title">
                     Html, Css, JavaScript, React
                   </h4>
                   <p class="project__description--para">
-                    A fully functional Library App showcasing amazing books from an api. Does not repeat the same book when displaying and allows the user to store into checkout.
+                    A fully functional Library App showcasing amazing books from
+                    an api. Does not repeat the same book when displaying and
+                    allows the user to store into checkout.
                   </p>
                   <div class="project__description--links">
-                    <a target="_blank" href="https://github.com/Herkamal/E-Commerce-Website" class="project__description--link">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Herkamal/E-Commerce-Website"
+                      class="project__description--link"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
-                    <a target="_blank" href="https://library-react-amber.vercel.app/" class="project__description--link">
+                    <a
+                      target="_blank"
+                      href="https://library-react-amber.vercel.app/"
+                      class="project__description--link"
+                    >
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -247,27 +336,64 @@
             </li>
             <li class="project">
               <div class="project__wrapper">
-                <img
-                  src="./assets/amazonimg.png"
-                  alt=""
-                  class="project__img"
-                />
+                <img src="./assets/amazonimg.png" alt="" class="project__img" />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
-                  <h3 class="project__description--title">
-                    Amazon Clone
-                  </h3>
+                  <h3 class="project__description--title">Amazon Clone</h3>
                   <h4 class="project__description--sub-title">
                     Html, Tailwind CSS, JavaScript, Next.js, Firebase
                   </h4>
                   <p class="project__description--para">
-                  Section of amazon products fetched from an api, Allowing users to sign in using firebase and allowing users to also purchase using stripe checkout
+                    Section of amazon products fetched from an api, Allowing
+                    users to sign in using firebase and allowing users to also
+                    purchase using stripe checkout
                   </p>
                   <div class="project__description--links">
-                    <a target="_blank" href="https://github.com/Herkamal/amazon-clone" class="project__description--link">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Herkamal/amazon-clone"
+                      class="project__description--link"
+                    >
                       <i class="fab fa-github"></i>
                     </a>
-                    <a target="_blank" href="https://amazon-clone-tau-neon.vercel.app/" class="project__description--link">
+                    <a
+                      target="_blank"
+                      href="https://amazon-clone-tau-neon.vercel.app/"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/trelloimg.png" alt="" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Trello Clone</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, Tailwind CSS, JavaScript, Next.js,
+                  </h4>
+                  <p class="project__description--para">
+                    Saving infomation into the trello todo list with Appwrite
+                    cloud. move each box left to right depending on the users
+                    desire.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Herkamal/trello-appwrite-clone"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href=""
+                      class="project__description--link trello"
+                    >
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -286,13 +412,15 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href="#"
+              target="_blank"
+              href="https://github.com/Herkamal"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Github
             </a>
             <a
-              href="#"
+              target="_blank"
+              href="https://www.linkedin.com/in/herkamal-randhawa-23980a16a/"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               LinkedIn
@@ -304,7 +432,8 @@
               Contact
             </a>
             <a
-              href="#"
+              target="_blank"
+              href="/assets/Resume.pdf"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Resume
